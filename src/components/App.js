@@ -5,6 +5,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import Prueba from './Prueba'
 import {Provider} from 'react-redux';
 import { store } from '../store/store'
+import { Formulario } from './tableItemsComponent/modalForm/Formulario'
 const App = () => {
     return (
           <Provider store = {store}>
@@ -14,8 +15,8 @@ const App = () => {
             <Route path="/items">
               <Table />
             </Route>
-            <Route path="/prueba">
-              <Prueba />
+            <Route path="/formulario">
+              <Formulario/>
             </Route>
           </Switch>
         </BrowserRouter>
